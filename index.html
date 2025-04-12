@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuizTime ✨</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="quiz-box">
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+    <h1 class="title">QuizTime 🧠</h1>
+    <div class="quiz-content" id="quiz">
+      <h2 id="question">Loading...</h2>
+      <div class="options">
+        <button class="option-btn" data-index="0"></button>
+        <button class="option-btn" data-index="1"></button>
+        <button class="option-btn" data-index="2"></button>
+        <button class="option-btn" data-index="3"></button>
+      </div>
+      <button id="next-btn">Next ➜</button>
+    </div>
+    <div id="score-screen" class="hidden">
+      <h2>🎉 You scored <span id="score"></span></h2>
+      <button onclick="location.reload()">Play Again 🔄</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
